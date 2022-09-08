@@ -1,0 +1,185 @@
+body {
+    margin: 0%;
+}
+
+/********************** Header and footer styles **********************/
+header {
+    width: 100%;
+    font-weight: bolder;
+    color: white;
+    background-color: royalblue;
+    border: solid black 1px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+footer {
+    margin: 0%;
+    position: relative;
+    bottom: 0%;
+    width: 100%;
+    color: white;
+    background-color: royalblue;
+    text-align: center;
+}
+
+footer p {
+    margin: 0%;
+    padding: 15px;
+}
+
+/********************** Navigation bar styles **********************/
+.navigation {
+    margin-left: 0%;
+    width: 100%;
+    position: sticky;
+    z-index: 1;
+    top: 0%;
+}
+
+.menu {
+    margin: 0%;
+    margin-top: 5px;
+    padding: 4px;
+    border: solid black 1px;
+    background-color: whitesmoke;
+}
+
+.menu > li {
+    display: inline-block;
+}
+
+.menu > li > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.menu > li:first-child {
+    padding-left: 20px;
+}
+
+.menu > li > a:hover {
+    background-color: royalblue;
+    color: white;
+}
+
+.menu > li:hover .drop {
+    display: block;
+}
+
+.drop li {
+    padding: 5px;
+    display: block;
+    background-color: white;
+}
+
+.drop li a {
+    text-decoration: none;
+    color: black;
+}
+
+.drop li:hover {
+    background-color: blue;
+}
+
+.drop li:hover a {
+    color: white;
+}
+
+.drop {
+    text-align: center;
+    position: absolute;
+    padding: 0%;
+    top: 27px;
+    width: auto;
+    max-width: 150px;
+    display: none;
+    border: solid black 1px;
+}
+
+/********************** Animation styles **********************/
+#offers {
+    margin-top: 10px;
+    margin-left: 10%;
+}
+
+#offers p {
+    border: solid steelblue 2px;
+    margin-left: 5%;
+    width: 60%;
+    height: 300px;
+    background-repeat: no-repeat;
+    animation-name: ads_ani;
+    animation-duration: 25s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ads_ani {
+    0% {
+        background-image: url('/Images/Animation/ani1.jpg');
+        width: 60%;
+    }
+    25% {
+        background-image: url('/Images/Animation/ani2.png');
+        width: 70%;
+    }
+    50% {
+        background-image: url('/Images/Animation/ani3.jpg');
+        width: 53%;
+    }
+    75% {
+        background-image: url('/Images/Animation/ani4.jpg');
+        width: 56%;
+    }
+    100% {
+        background-image: url('/Images/Animation/ani5.jpg');
+        width: 58%;
+    } 
+}
+
+/********************** Sample Products styles **********************/
+.product_section {
+    margin: 20px 0% 30px 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.product {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    background-color: gainsboro;
+}
+
+.product:hover {
+    padding: 20px;
+}
+
+.product img {
+    width: 300px;
+    height: 200px;
+}
+
+.product button {
+    width: 100%;
+    padding: 5px;
+    background-color: whitesmoke;
+    border: solid black 1px;
+    border-radius: 2px;
+}
+
+.product button:active {
+    background-color: rgb(250, 234, 230);
+    border: solid rgb(0, 255, 76) 1px;
+    border-radius: 2px;
+    color: rgb(0, 255, 76);
+    font-weight: bold;
+}
+
+
+

@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --offWhite: #faf8ff;
+  --purple: #8685ef;
+  --lightPurple: #d7d7ff;
+  --darkGray: #2c3333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #ffffff;
+}
+
+.stop_scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Header Setion CSS Starts here */
+header {
+  width: 100%;
+  background-color: var(--offWhite);
+}
+
+.banner {
+  text-align: right;
+}
+.banner h1 {
+  padding: 25px 50px;
+  font-weight: 600px;
+  font-size: 45px;
+  text-transform: uppercase;
+  color: var(--purple);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navbar {
+  overflow: hidden;
+  padding: 0 40px;
+  background-color: var(--purple);
+  color: var(--offWhite);
+  z-index: 999;
+  cursor: pointer;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--offWhite);
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: var(--offWhite);
+  font-weight: 600;
+  padding: 14px 20px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  transition: 0.5s;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: var(--lightPurple);
+  color: var(--darkGray);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--purple);
+  min-width: 180px;
+  margin-top: 2px;
+  border-radius: 0 0 10px 10px;
+  z-index: 999;
+  box-shadow: 0px 0px 14px -1px rgb(0 0 0 / 20%);
+  transition: 1s;
+}
+
+.dropdown-content a {
+  float: none;
+  color: var(--offWhite);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  transition: 0.5s;
+  z-index: 999;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--lightPurple);
+  color: var(--darkGray);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Header Setion CSS Ends here */
+/* footer Starts Here */
+.footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  background-color: var(--purple);
+  text-align: center;
+}
+.footer h3 {
+  padding: 20px 50px;
+  color: var(--offWhite);
+}
+
+/* Footer Ends Here */
+
+/* Slideshow container */
+.hero {
+  position: relative;
+  margin: 10px;
+  border: solid 4px var(--purple);
+}
+.slideshow-container {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+  height: 900px;
+  object-fit: cover;
+  object-position: top left;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Container Ends Here */
+
+/* product section */
+
+.product_card {
+  margin: 10px;
+  justify-content: center;
+  border: solid 4px var(--purple);
+}
+.title {
+  width: 100%;
+  position: relative;
+  padding-left: 40px;
+  padding-top: 50px;
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--purple);
+}
+.item_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.card {
+  background-color: var(--offWhite);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: left;
+  font-family: arial;
+  border-radius: 10px;
+  justify-content: center;
+  align-content: center;
+  margin: 2%;
+  overflow: hidden;
+  object-position: center;
+}
+.card h1 {
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--purple);
+  padding: 20px;
+}
+.card img {
+  width: 350px;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-position: center;
+}
+.price {
+  padding: 30px 30px 10px 30px;
+  font-size: 25px;
+  color: var(--purple);
+}
+
+.offer_price {
+  padding: 0px 30px 30px 30px;
+  font-size: 25px;
+  color: var(--purple);
+}
+.add_to_cart {
+  font-size: 30px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  display: inline-block;
+  background-color: var(--purple);
+  color: var(--offWhite);
+  transition-duration: 0.4s;
+}
+
+.add_to_cart:hover {
+  background-color: var(--lightPurple);
+  color: var(--purple);
+}
+
+/* Modal */
+
+.show-modal {
+  cursor: pointer;
+}
+
+/* -------------------------- */
+/* CLASSES TO MAKE MODAL WORK */
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0);
+  padding: 6rem;
+  border-radius: 5px;
+  z-index: 10;
+}
+.modal_body {
+  background-color: var(--offWhite);
+  display: flex;
+  height: 65vh;
+  overflow: hidden;
+}
+.modal_banner {
+  width: 30%;
+}
+.modal_banner img {
+  object-fit: cover;
+  width: fit-content;
+  height: 100%;
+  overflow: hidden;
+}
+.form {
+  width: 50%;
+}
+.form h1 {
+  padding: 30px 30px 10px 30px;
+  font-weight: 400;
+}
+.modal_footer {
+  height: 5vh;
+  overflow: hidden;
+  background-color: #8685ef;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
